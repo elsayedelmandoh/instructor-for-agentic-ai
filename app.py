@@ -1,7 +1,7 @@
 import gradio as gr
 from groq import Groq
 from src.utils.prompts import SYSTEM_PROMPT, EXAMPLE_QUESTIONS
-from src.config.settings import GROQ_API_KEY
+from src.config.settings import GROQ_API_KEY, CHATBOT_NAME
 
 def get_groq_client():
     """Initialize and return Groq client"""
@@ -58,8 +58,8 @@ def respond(message, history, model, temperature, max_tokens):
 
 app = gr.ChatInterface(
     fn=respond,
-    title="🧭 Instructor for Agentic AI",
-    description="Ask questions about designing, building, and refining agentic AI systems.",
+    title=f"🧭 {CHATBOT_NAME}",
+    description=f"Ask questions about designing, building, and refining agentic AI systems with {CHATBOT_NAME}.",
     additional_inputs=[
         gr.Dropdown(
             choices=[
