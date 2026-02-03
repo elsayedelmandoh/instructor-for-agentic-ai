@@ -1,3 +1,15 @@
+---
+title: Instructor For Agentic Ai
+emoji: 🦀
+colorFrom: pink
+colorTo: red
+sdk: gradio
+sdk_version: 6.5.1
+app_file: app.py
+pinned: false
+short_description: AI-powered Instructor for Agentic AI using Groq and Gradio
+---
+
 # Instructor for Agentic AI
 
 Queens University - GenAI - From Studio 2, Lab 1: Building a custom LLM Chatbot.   
@@ -66,9 +78,9 @@ agentic-instructor-chatbot
    ```
 
 4. To run the chatbot, execute the following command:
-```
-python app.py
-```
+   ```
+   python app.py
+   ```
 
 ## Contributing
 
