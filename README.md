@@ -37,120 +37,38 @@ agentic-instructor-chatbot
 ├── .env
 ├── research/
 │   └── notebook.ipynb
-├── src
-│   ├── config
-│   │   ├── __init__.py
-│   │   └── settings.py
-│   └── utils
-│       ├── __init__.py
-│       └── prompts.py
-├── .env
-├── .gitignore
-├── requirements.txt
-├── notebook.ipynb
-├── app.py
-└── README.md
-```
-
-## Features
-
-- Agentic instruction generation: Produces step-by-step, actionable instructor responses tailored for agentic tasks and workflows.
-- Groq-powered LLM integration: Uses the Groq API to run performant LLM calls with configurable prompts and context handling.
-- Interactive Gradio UI: A lightweight Gradio interface for live conversations, iteration on prompts, and rapid feedback.
-
-## Installation
-
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/elsayedelmandoh/instructor-for-agentic-ai
-   cd instructor-for-agentic-ai
-   ```
-
-2. Create a development environment (Linux + Conda):
-
-   - Using `conda` (recommended):
-
-   ```bash
-   # create a new conda environment with a supported Python version
-   conda create -n agentic-instructor python=3.12 -y
-
-   # activate the environment
-   conda activate agentic-instructor
-
-   # install dependencies
-   pip install -r requirements.txt
-   ```
-
-   - If you prefer a plain virtualenv on Linux (optional):
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
-   ```
-
-3. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-
-4. To run the chatbot, execute the following command:
-   ```
-   python app.py
-   ```
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
-
-
-
-
-
-## Project Structure
-```
-web-search/
-├── app.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── .gitattributes
-├── .env
-├── research/
-│   └── notebook.ipynb
-└── src/
+└── src
     ├── __init__.py
-    ├── config/
+    ├── config
     │   ├── __init__.py
     │   └── settings.py
-    └── utils/
+    └── utils
         ├── __init__.py
-        └── chat.py
+        └── prompts.py
 ```
 
 ## Setup
 
-- GitHub repo: [link](https://github.com/elsayedelmandoh/web-search)
-- Hugging Face Space: [link](https://huggingface.co/spaces/elsayedelmandoh/Gemini_3_Web_Search)
+- GitHub repo: [link](https://github.com/elsayedelmandoh/instructor-for-agentic-ai)
+- Hugging Face Space: [link](https://huggingface.co/spaces/elsayedelmandoh/instructor-for-agentic-ai)
 
 ### Clone from GitHub
 ```bash
-git clone https://github.com/elsayedelmandoh/web-search
-cd web-search
+git clone https://github.com/elsayedelmandoh/instructor-for-agentic-ai
+cd instructor-for-agentic-ai
 ```
 
 ### Conda environment
 ```bash
 # create & activate
-conda create -n web-search python=3.12 -y
-conda activate web-search
+conda create -n instructor-for-agentic-ai python=3.12 -y
+conda activate instructor-for-agentic-ai
 
 # install pip then dependencies
 conda install pip -y
 pip install -r requirements.txt
 ```
-You may use a .env loader or store vars in the Hugging Face Space secrets.
+Create a .env file at the project root or store vars in the Hugging Face Space secrets.
 
 ### Run locally
 ```bash
@@ -161,7 +79,7 @@ Open the URL printed in the terminal.
 ### Duplicate Hugging Face Space
 
 Hugging Face Space URL used in this project:
-https://huggingface.co/spaces/elsayedelmandoh/Gemini_3_Web_Search
+https://huggingface.co/spaces/elsayedelmandoh/instructor-for-agentic-ai
 
 1. Sign in to Hugging Face.
 2. Go to the Space you want to duplicate.
